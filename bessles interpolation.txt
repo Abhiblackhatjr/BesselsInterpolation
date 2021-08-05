@@ -34,7 +34,7 @@ do
 	i++;
  }
 while(ax[i]<x);
- i--; //this is the only difference between sterling and bessels
+ i--; 
  p=(x-ax[i])/h;
  y1=p*d[i][1];
  y2=p*(p-1)*(d[i][2]+d[i-1][2])/4;
@@ -42,7 +42,6 @@ while(ax[i]<x);
  y4=(p+1)*p*(p-1)*(p-2)*(d[i-2][4]+d[i-1][4])/48;
  y=ay[i]+y1+y2+y3+y4; 
 printf("\n When x = %6.2f , y = %6.8f",x,y);
-printf("\n\n\n goodnight tuhin vai");
 }
 
 
